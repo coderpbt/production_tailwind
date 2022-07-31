@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            jprimari: '#FECC02',
+            darkbg: '#131313',
+            darkligt: '#4E4E4E',
+          },
+          fontFamily: {
+            railway : ["'Raleway', sans-serif;"],
+          },
+          container: {
+            center: true,
+          },
+          backgroundImage: {
+              banner: "url('./images/banner.jpg')",
+            },
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="px-52 flex justify-between items-center py-6 shadow">
+      <h1 class="text-xl text-darkbg font-extrabold font-railway uppercase">Jakanaka Production</h1>
+      <ul class="flex px-1">
+        <li class="px-2 font-bold font-railway uppercase"><a href="#">About US</a></li>
+        <li class="px-2 font-bold font-railway uppercase"><a href="#">our Movies</a></li>
+        <li class="px-2 font-bold font-railway uppercase"><a href="#">Services</a></li>
+      </ul>
+    </div>
+    <!-- banner area -->
+    <div class="bg-banner bg-cover py-40 bg-no-repeat bg-center flex items-center">
+      <div class="ml-28 font-railway">
+        <span class="font-normal text-white uppercase text-xl">Movie production studio</span>
+        <h1 class="text-7xl font-semibold text-white uppercase">Films MAde to</h1>
+        <h1 class="text-7xl text-jprimari font-semibold uppercase">Perfection</h1>
+        <p class="text-white w-2/3 my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut  elit tellus, 
+          luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+        <a class="text-xl font-bold px-4 py-2 mt-5 inline-block text-white hover:bg-jprimari transition ease-out hover:border-yellow-300 uppercase border-2" href="#">Discover More</a>  
+      </div>
+    </div>
+    <!-- banner area -->
+  </header>
+  <main>
+    <!-- our mission area -->
+    <section class="our-misson-area py-28">
+      <div class="mx-52">
+        <div class="border-2 p-4 border-darkbg">
+          <div class="grid grid-cols-2 gap-9 pb-8">
+             <div class="relative">
+              <img class="w-full" src="images/camera-man.jpg" alt="img">
+              <h5 class="absolute left-0 -bottom-6 right-0 w-3/4 mx-auto bg-white shadow rounded text-black text-lg font-semibold py-3 px-14">23 YEARS of EXPERIENCE</h5>
+             </div>
+             <div>
+               <span class="text-xl font-semibold mb-2">ABOUT US</span>
+               <h1 class="font-bold text-5xl uppercase mt-3">FIlming Experience</h1>
+               <h1 class="font-bold text-5xl uppercase mb-4">Just Got better</h1>
+               <p>Primis lobortis adipiscing imperdiet dis ultricies. Id commodo interdum fermentum pede dictumst ipsum. Erat sapien phasellus suspendisse natoque nulla leo ornare mi. Pretium rhoncus venenatis ante dignissim aliquet faucibus tempus etiam feugiat.</p>
+               <a class="text-base font-bold px-4 py-2 mt-5 border-black inline-block text-black hover:bg-jprimari transition ease-out hover:border-yellow-300 uppercase border-2" href="#">Discover More</a>
+             </div>
+          </div>
+          <!-- mission main -->
+          <div class="grid grid-cols-3 py-11 gap-5">
+            <div>
+              <span class="border-t-4 border-black py-1 block"></span>
+              <h3 class="uppercase text-xl font-bold ">OUR VISIOn</h3>
+              <p class="text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            </div>
+            <div>
+              <span class="border-t-4 border-black py-1 block"></span>
+              <h3 class="uppercase text-xl font-bold ">OUR VISIOn</h3>
+              <p class="text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            </div>
+            <div>
+              <span class="border-t-4 border-black py-1 block"></span>
+              <h3 class="uppercase text-xl font-bold ">OUR VISIOn</h3>
+              <p class="text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            </div>
+          </div>
+        <!-- mission main -->
+        </div>
+      </div>
+    </section>
+    <!-- our mission area -->
+
+    <!-- start movie collection -->
+    <section class="movie-collection py-28 bg-darkligt">
+      <div class="mx-52">
+        <div class="flex justify-between pb-12">
+          <div>
+            <span class="text-xl font-semibold text-white mb-2">ABOUT US</span>
+            <h1 class="font-bold text-5xl uppercase text-white mt-3">Movie collection</h1>
+          </div>
+          <div>
+            <a class="text-xl font-bold px-4 py-2 mt-5 inline-block text-white hover:bg-jprimari transition ease-out hover:border-yellow-300 uppercase border-2" href="#">See More Movies</a>  
+          </div>
+        </div>
+        <!-- grid collection -->
+        <div class="grid grid-cols-4 gap-8">
+          <div class="border-2 p-3">
+            <img class="w-full h-full" src="images/fractured.jpg" alt="">
+          </div>
+          <div class="border-2 p-3">
+            <img class="w-full h-full" src="images/inception.jpg" alt="">
+          </div>
+          <div class="border-2 p-3">
+            <img class="w-full h-full" src="images/interstellar.jpg" alt="">
+          </div>
+          <div class="border-2 p-3">
+            <img class="w-full h-full" src="images/tenet.jpg" alt="">
+          </div>
+        </div>
+        <!-- grid collection -->
+      </div>
+    </section>
+    <!-- start movie collection -->
+
+     <!-- start we offer -->
+     <section class="movie-collection py-28">
+      <div class="mx-52">
+        <div class="pb-12">
+          <div class="text-center">
+            <span class="text-xl font-semibold text-black mb-2 uppercase">services</span>
+            <h1 class="font-bold text-5xl uppercase text-black mt-3">what we offer</h1>
+          </div>
+
+        </div>
+        <!-- grid collection -->
+        <div class="grid grid-cols-4 gap-8">
+          <!-- single item -->
+          <div class="border-2 border-black p-3 text-center">
+            <img class="w-24 m-auto" src="images/icons/camera.png" alt="">
+            <span class="text-xl font-semibold text-black my-2 block uppercase">movies director</span>
+            <p class="font-normal text-base">Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget. </p>
+          </div>
+          <!-- single item -->
+          <div class="border-2 border-black p-3 text-center">
+            <img class="w-24 m-auto" src="images/icons/3d-glasss.png" alt="">
+            <span class="text-xl font-semibold text-black my-2 block uppercase">3D MOVIES</span>
+            <p class="font-normal text-base">Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget. </p>
+          </div>
+          <!-- single item -->
+          <div class="border-2 border-black p-3 text-center">
+            <img class="w-24 m-auto" src="images/icons/director-chair.png" alt="">
+            <span class="text-xl font-semibold text-black my-2 block uppercase">3D MOVIES</span>
+            <p class="font-normal text-base">Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget. </p>
+          </div>
+          <!-- single item -->
+          <div class="border-2 border-black p-3 text-center">
+            <img class="w-24 m-auto" src="images/icons/film.png" alt="">
+            <span class="text-xl font-semibold text-black my-2 block uppercase">3D MOVIES</span>
+            <p class="font-normal text-base">Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget. </p>
+          </div>
+          <!-- single item -->
+          <div class="border-2 border-black p-3 text-center">
+            <img class="w-24 m-auto" src="images/icons/theater.png" alt="">
+            <span class="text-xl font-semibold text-black my-2 block uppercase">3D MOVIES</span>
+            <p class="font-normal text-base">Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget. </p>
+          </div>
+          <!-- single item -->
+          <div class="border-2 border-black p-3 text-center">
+            <img class="w-24 m-auto" src="images/icons/rim.png" alt="">
+            <span class="text-xl font-semibold text-black my-2 block uppercase">3D MOVIES</span>
+            <p class="font-normal text-base">Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget. </p>
+          </div>
+          <!-- single item -->
+          <div class="border-2 border-black p-3 text-center">
+            <img class="w-24 m-auto" src="images/icons/cut-board.png" alt="">
+            <span class="text-xl font-semibold text-black my-2 block uppercase">3D MOVIES</span>
+            <p class="font-normal text-base">Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget. </p>
+          </div>
+          <!-- single item -->
+          <div class="border-2 border-black p-3 text-center">
+            <img class="w-24 m-auto" src="images/icons/count-down.png" alt="">
+            <span class="text-xl font-semibold text-black my-2 block uppercase">3D MOVIES</span>
+            <p class="font-normal text-base">Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget. </p>
+          </div>
+        </div>
+        <!-- grid collection -->
+      </div>
+    </section>
+    <!-- start we offer -->
+  </main>
+  <footer class="footer-area pt-16 pb-8 bg-cover bg-no-repeat" style="background-image: url('./images/footer-bg.jpg') ;">
+      <div class="mx-52 text-center">
+        <div>
+          <h1 class="font-bold text-5xl uppercase text-white mt-3">jhaka naka production</h1>
+          <span class="text-xl font-semibold text-white mb-2 uppercase">next level experience</span>
+          <p class="text-base text-white pt-4">Feugiat nibh litora semper proin nullam facilisi <br>
+            volutpat ex ullamcorper.</p>
+        </div>
+        <div class="pt-20">
+          <p class="text-base text-white">Copyright © 2021 Jhaka Naka Production, All rights reserved. Present by Mir Hussain</p>
+        </div>
+      </div>
+  </footer>
+</body>
+</html>
